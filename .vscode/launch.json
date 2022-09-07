@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Linux C Demo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/demo/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/demo",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build debug c demo",
+        },
+        {
+            "name": "Debug Linux V Demo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/demo/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/demo",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "preLaunchTask": "build debug v demo",
+        }
+    ]
+}

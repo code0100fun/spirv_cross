@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build debug v demo",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/demo"
+            },
+            "command": "v",
+            "args": [
+                "-g",
+                "main.v"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build debug c demo",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/demo"
+            },
+            "command": "v",
+            "args": [
+                "-keepc",
+                "-cg",
+                "main.v"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

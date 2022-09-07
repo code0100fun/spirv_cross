@@ -1,0 +1,45 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "MSYS2": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": [
+                "--login",
+            ],
+            "icon": "terminal-bash",
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "MSYS2",
+    "terminal.integrated.env.windows": {
+        "MSYSTEM": "MINGW64",
+        "MSYS2_PATH_TYPE": "inherit",
+        "CHERE_INVOKING": "1"
+    },
+    "cmake.configureOnOpen": false,
+    "terminal.integrated.automationProfile.windows": {
+        "path": "powershell.exe"
+    },
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "[v]": {
+        "editor.insertSpaces": true
+    },
+    "emeraldwalk.runonsave": {
+        // "shell": "bash",
+        "shell": "C:\\msys64\\usr\\bin\\bash.exe",
+        "autoClearConsole": true,
+        "commands": [
+            {
+                "match": "\\.v$",
+                "cmd": "v crun bin/fmts.v '${relativeFile}'"
+            },
+            {
+                "match": "\\.vsh$",
+                "cmd": "v crun bin/fmts.v '${relativeFile}'"
+            },
+        ]
+    },
+    "files.associations": {
+        "vector": "cpp",
+        "algorithm": "cpp"
+    }
+}
